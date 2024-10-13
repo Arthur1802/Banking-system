@@ -3,6 +3,7 @@ import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
 import Welcome from './pages/Welcome/Welcome'
 import Login from './pages/Login/Login'
 import Signin from './pages/Signin/Signin'
+import Home from './pages/Home/Home'
 
 export default function AppRoutes(){
     return(
@@ -12,7 +13,7 @@ export default function AppRoutes(){
                 <Route path = "/welcome" element = {<Welcome />}/>
                 <Route path = "/login" element = {<Login />}/>
                 <Route path = "/signin" element = {<Signin />}/>
-                <Route path = "/home" element = <ProtectedRoute element = {<Home />}/> />
+                <Route path = "/home" element = {<ProtectedRoute><Home /></ProtectedRoute>}/>
             </Routes>
         </BrowserRouter>
     )
