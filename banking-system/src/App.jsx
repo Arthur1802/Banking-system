@@ -1,11 +1,10 @@
-import AuthProvider from './utils/contexts/authContext/AuthProvider.js'
-import AppRoutes from './AppRoutes'
+import Signin from './pages/Signin/Signin'
 
 const App = () => {
     return (
-        <AuthProvider>
-            <AppRoutes />
-        </AuthProvider>
+        <div className = "App">
+            <Signin />
+        </div>
     )
 }
 

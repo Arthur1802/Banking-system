@@ -1,0 +1,124 @@
+.wallpaper {
+    width: 50%;
+    height: 100%;
+    background-color: #29448d;
+}
+
+.auth-panel {
+    width: 50%;
+    height: 100%;
+    padding: 1% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #ccc;
+}
+
+.auth-panel h1 {
+    font-size: 2rem;
+    color: var(--primary-text-color);
+}
+
+.auth-panel form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.auth-panel form .form-floating {
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.auth-panel form .form-floating .passwd-toggle {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 15%;
+    padding: 10px 20px;
+    color: var(--primary-text-color);
+}
+
+.auth-panel form .form-floating .passwd-toggle svg {
+    cursor: pointer;
+}
+
+.auth-panel form input.form-control {
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.auth-panel form .btn-secondary {
+    display: flex;
+    align-items: center;
+}
+
+.auth-panel form .btn-secondary .btn-logo-wrapper {
+    display: flex;
+    justify-content: space;
+    align-items: center;
+    gap: 10px;
+    text-wrap: nowrap;
+    margin-left: 30%;
+}
+
+.auth-panel form .btn-secondary .btn-logo-wrapper svg {
+    width: 20px;
+    height: 20px;
+}
+
+.auth-panel form .terms {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.auth-panel form .terms input[type = "checkbox"], .auth-panel form .terms p {
+    margin: auto 0;
+}
+
+.auth-panel form .terms input[type = "checkbox"] {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+}
+
+.auth-panel .separator {
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 400;
+    margin: 0;
+    padding: 24px 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    vertical-align: baseline;
+}
+
+.auth-panel .separator span {
+    padding: 0 10px;
+}
+
+.auth-panel .separator::before, .auth-panel .separator::after {
+    content: "";
+    border-bottom: 1px solid #c2c8d0;
+    flex: 1 0 auto;
+    height: .5em;
+    margin: 0;
+}
